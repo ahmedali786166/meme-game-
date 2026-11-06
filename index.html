@@ -1243,8 +1243,11 @@
     async function copyText(text) {
       try {
         if (navigator.clipboard && window.isSecureContext) {
-          await navigator.clipboard.writeText(text);
-          return true;
+          const copied = await Promise.race([
+            navigator.clipboard.writeText(text).then(() => true).catch(() => false),
+            new Promise((resolve) => setTimeout(() => resolve(null), 800))
+          ]);
+          if (copied === true) return true;
         }
       } catch (e) {}
       try {
