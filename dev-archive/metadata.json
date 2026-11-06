@@ -1,0 +1,6 @@
+{
+  "name": "Shahenshah Flap",
+  "description": "A high-octane Flappy Bird game featuring the legendary Bollywood meme character dodging animated fire pillars with custom voice lines and physics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
