@@ -6,7 +6,7 @@
 
 ## Play
 
-https://ahmedali786166.github.io/meme-game-/
+https://shahenshah-meme-game.vercel.app/
 
 ## Features
 
@@ -31,14 +31,19 @@ Then open the printed local URL. You can also use any static server, for example
 python -m http.server 8080
 ```
 
-## Deploy to GitHub Pages
+## Deploy
 
-1. Open the repository on GitHub and go to **Settings → Pages**
-2. Under **Build and deployment**, set **Source** to **Deploy from a branch**
-3. Choose branch **main** and folder **/ (root)**, then click **Save**
+The game is live on Vercel at https://shahenshah-meme-game.vercel.app/
 
-All paths are relative, so the game works from the `/meme-game-/` project subpath. `.nojekyll`
-disables Jekyll processing so files are served exactly as committed.
+To redeploy after changes:
+
+```bash
+npx vercel --prod
+```
+
+The same folder also works on GitHub Pages: **Settings → Pages → Deploy from a branch**,
+branch **main**, folder **/ (root)**. All paths are relative, so it runs from either the
+Vercel root or the GitHub Pages `/meme-game-/` subpath.
 
 ## Project structure
 
