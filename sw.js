@@ -1,5 +1,5 @@
 /* Shahenshah Flap service worker — offline shell + fast repeat loads. */
-const CACHE_VERSION = "shahenshah-flap-v6";
+const CACHE_VERSION = "shahenshah-flap-v7";
 const CACHE_NAME = `${CACHE_VERSION}`;
 
 const CORE_ASSETS = [
